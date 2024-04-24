@@ -16,7 +16,7 @@ function App() {
       <h4>I think we can start working then.</h4>
       <h5>Let&apos;s also test it with some event.</h5>
 
-      <h6
+      <button
         style={{
           background: '#9fe23f',
           fontSize: '20px',
@@ -25,11 +25,14 @@ function App() {
           margin: '0 auto',
           borderRadius: '8px',
           cursor: 'pointer',
+          border: 'none',
+          fontWeight: '700',
         }}
         onClick={handleCount}
+        type="button"
       >
         Okey click me.
-      </h6>
+      </button>
       {counter !== 0 ? (
         <h2 style={{ color: '#41e121', fontSize: '50px' }}>{counter}</h2>
       ) : (
